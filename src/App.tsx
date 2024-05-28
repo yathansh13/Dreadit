@@ -42,8 +42,12 @@ export default App;
 function Layout() {
   return (
     <>
-      <Navbar />
-      <Outlet />
+      <div className="main-div">
+        <Navbar />
+        <div className="outlet-div">
+          <Outlet />
+        </div>
+      </div>
     </>
   );
 }
